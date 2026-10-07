@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Redes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>Diagnóstico<span>Net</span></h2>
+            <a href="#problemas">Problemas</a>
+        </nav>
+
+        <div class="hero">
+            <p class="tag">PROJETO DE REDES DE COMPUTADORES</p>
+            <h1>Diagnóstico de <span>Redes</span></h1>
+            <p>
+                Identifique problemas de conectividade, descubra suas causas
+                e conheça os principais procedimentos de solução.
+            </p>
+            <a href="#problemas" class="botao">Explorar situações →</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="introducao">
+            <h2>Sobre o projeto</h2>
+            <p>
+                Este projeto apresenta cinco problemas comuns em redes de
+                computadores. Cada situação contém possíveis causas,
+                comandos de diagnóstico e procedimentos para solucionar
+                as falhas.
+            </p>
+        </section>
+
+        <section class="ferramentas">
+            <h2>Ferramentas de diagnóstico</h2>
+
+            <div class="grade">
+                <div class="ferramenta">
+                    <h3>IPCONFIG</h3>
+                    <p>Exibe as configurações de rede do computador.</p>
+                </div>
+
+                <div class="ferramenta">
+                    <h3>PING</h3>
+                    <p>Testa a comunicação entre dispositivos.</p>
+                </div>
+
+                <div class="ferramenta">
+                    <h3>NSLOOKUP</h3>
+                    <p>Verifica a resolução de nomes pelo DNS.</p>
+                </div>
+
+                <div class="ferramenta">
+                    <h3>DHCP</h3>
+                    <p>Distribui automaticamente configurações de IP.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="problemas">
+            <h2>Problemas de rede</h2>
+            <p class="subtitulo">
+                Selecione uma situação para consultar o diagnóstico.
+            </p>
+
+            <div class="conteudo">
+                <div id="listaProblemas" class="lista-problemas"></div>
+
+                <article class="detalhes">
+                    <span id="numero" class="etiqueta"></span>
+
+                    <h2 id="titulo"></h2>
+                    <p id="descricao"></p>
+
+                    <h3>Possíveis causas</h3>
+                    <ul id="causas"></ul>
+
+                    <h3>Como identificar</h3>
+                    <ul id="diagnostico"></ul>
+
+                    <h3>Como resolver</h3>
+                    <ul id="solucoes"></ul>
+
+                    <div class="terminal">
+                        <div class="terminal-topo">
+                            <h3>Comandos úteis</h3>
+                            <button id="copiar">Copiar comandos</button>
+                        </div>
+
+                        <pre id="comandos"></pre>
+                        <p id="mensagem"></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="aviso">
+            <h3>Importante</h3>
+            <p>
+                Os endereços IP utilizados nos exemplos são ilustrativos.
+                Antes de realizar testes, confira as configurações da sua
+                própria rede. Não altere configurações sem autorização.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto escolar — Técnico em Informática</p>
+        <p>Diagnóstico de Redes de Computadores</p>
+    </footer>
+
+</body>
+</html>
