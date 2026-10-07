@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #0b1120;
+    color: #edf2ff;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #101d35, #142b48);
+    padding: 25px 8% 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 22px;
+}
+
+nav h2 span,
+.hero h1 span {
+    color: #5ee6c1;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+.hero {
+    max-width: 850px;
+    margin: 90px auto 0;
+}
+
+.tag {
+    color: #5ee6c1;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 68px);
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.hero p:not(.tag) {
+    max-width: 600px;
+    color: #b8c5d9;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    background: #5ee6c1;
+    color: #071720;
+    padding: 13px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+section {
+    padding: 65px 0;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.introducao p,
+.subtitulo {
+    color: #aab7cc;
+    max-width: 800px;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.ferramenta {
+    background: #131e33;
+    border: 1px solid #26344d;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+.ferramenta h3 {
+    color: #5ee6c1;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.ferramenta p {
+    color: #aab7cc;
+    font-size: 14px;
+}
+
+.subtitulo {
+    margin-bottom: 25px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.lista-problemas {
+    display: grid;
+    gap: 10px;
+}
+
+.problema {
+    text-align: left;
+    padding: 17px;
+    background: #111b2e;
+    color: #edf2ff;
+    border: 1px solid #26344d;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.problema:hover,
+.problema.ativo {
+    border-color: #5ee6c1;
+    background: #172942;
+}
+
+.detalhes {
+    background: #111b2e;
+    border: 1px solid #26344d;
+    border-radius: 14px;
+    padding: 30px;
+}
+
+.etiqueta {
+    display: inline-block;
+    color: #5ee6c1;
+    background: #18372f;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.detalhes h2 {
+    margin-top: 15px;
+}
+
+.detalhes > p {
+    color: #aab7cc;
+    margin-bottom: 25px;
+}
+
+.detalhes h3 {
+    font-size: 16px;
+    margin: 22px 0 10px;
+}
+
+.detalhes ul {
+    padding-left: 22px;
+    color: #c2cde0;
+}
+
+.detalhes li {
+    margin-bottom: 7px;
+}
+
+.detalhes li::marker {
+    color: #5ee6c1;
+}
+
+.terminal {
+    background: #080d17;
+    border: 1px solid #26344d;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.terminal-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.terminal-topo h3 {
+    margin: 0;
+}
+
+button#copiar {
+    background: #18372f;
+    color: #5ee6c1;
+    border: 1px solid #326b5b;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: #b8f7e6;
+    font-family: Consolas, monospace;
+    margin-top: 18px;
+    line-height: 1.9;
+}
+
+#mensagem {
+    color: #5ee6c1;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.aviso {
+    border-top: 1px solid #26344d;
+}
+
+.aviso p {
+    color: #aab7cc;
+}
+
+footer {
+    border-top: 1px solid #26344d;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #8291a9;
+    font-size: 13px;
+}
+
+@media (max-width: 850px) {
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-problemas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+        padding: 22px 6% 60px;
+    }
+
+    .hero {
+        margin-top: 65px;
+    }
+
+    .grade,
+    .lista-problemas {
+        grid-template-columns: 1fr;
+    }
+
+    .detalhes {
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .terminal-topo {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
